@@ -6,8 +6,13 @@ public class ArrayInverter_q {
     public static void main(String[] args) {
         int[] array = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
         invert(array);
-//        toString(array);
+        toString(array);
         System.out.println(Arrays.toString(array));
+        StringBuilder str = new StringBuilder();
+        str.append(56);
+        str.insert(2, 4);
+        System.out.println(str);
+        // TODO: 07.04.2017 delete some chars from string
     }
 
     private static void invert(int[] array) {
