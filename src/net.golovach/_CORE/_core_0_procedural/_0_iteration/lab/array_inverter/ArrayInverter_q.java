@@ -8,10 +8,9 @@ public class ArrayInverter_q {
         invert(array);
 //        toString(array);
         System.out.println(Arrays.toString(array));
-
     }
 
-    public static void invert(int[] array) {
+    private static void invert(int[] array) {
         for (int i = 0; i < array.length / 2; i++) {
             int tmp = array[i];
             array[i] = array[array.length - 1 - i];
@@ -20,15 +19,15 @@ public class ArrayInverter_q {
 
     }
 
-    public static void toString(int[] array){
-        for (int i=0; i<array.length; i++){
-            if(i==0){
+    private static void toString(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (i == 0) {
                 System.out.print("[");
-            }else if(i==array.length-1){
-                System.out.println(array[i]+"]");
+            } else if (i == array.length - 1) {
+                System.out.println(array[i] + "]");
                 break;
             }
-            System.out.print(array[i]+", ");
+            System.out.print(array[i] + ", ");
         }
     }
 }
